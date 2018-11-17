@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Барбершоп "Бородински"</title>
+    <title>Прайс-Лист</title>
     <link rel="icon" href="img/Favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/style.css">
+   <!-- <link href="normalize.min.css" rel="stylesheet"> -->
 
 </head>
 
@@ -16,10 +18,10 @@
                     <img src="logo.svg" width="368" height="153" alt="Логотип для барбершопа"> </a>
             </div>
             <ul class="site-navigation">
-                <li> <a href=index.html>Информация</a></li>
-                <li> <a href=index.html>Новости</a></li>
-                <li> <a href=index.html>Прайс-лист</a></li>
-                <li> <a href=index.html>Магазин</a></li>
+                <li> <a href=info.html>Информация</a></li>
+                <li> <a href=news.html>Новости</a></li>
+                <li> <a href=price.html>Прайс-лист</a></li>
+                <li> <a href=catalog.html>Магазин</a></li>
                 <li> <a href=index.html>Контакты</a></li>
             </ul>
             <ul class="user-navigation">
@@ -28,67 +30,56 @@
         </nav>
     </header>
     <main class="conainer">
-        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-        <section class="features">
-            <h2 class="visually-hidden">Приемущества</h2>
+        <h1>Прайс-Лист</h1>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Главная</a></li>
+            <li class="active">Прайс-Лист</li>
+        </ul>
+        <h1>Истинно мужская классика</h1>
+        <section class="catalog-items">
+            <h2>Мы используем только лучшие средства:</h2>
             <ul class="features-list">
                 <li class="features-item">
-                    <h3>Быстро</h3>
-                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                    <p>Baxter of California</p>
                 </li>
                 <li class="features-item">
-                    <h3>Круто</h3>
-                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                    <p>Mr. Natty</p>
                 </li>
                 <li class="features-item">
-                    <h3>Дорого</h3>
-                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                    <p>Suavecito</p>
+                </li>
+                <li class="features-item">
+                    <p>Malin+Goetz</p>
                 </li>
             </ul>
         </section>
-        <section class="news">
-            <h2>Новости</h2>
-            <ul class="news-list">
-                <li class="news-item">
-                    <p> НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                    <time datetime="2018-01-11"> 11 января 2018</time>
-                </li>
-            </ul>
-            <ul class="news-list">
-                <li class="news-item">
-                    <p> В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-                    <time datetime="2018-01-11"> 11 января 2018</time>
-                </li>
-            </ul>
-            <a class="button" href="news.html">Все новости</a>
-        </section>
-        <section calss="gallery">
-            <h2>Фотогалерея</h2>
-            <div class="gallery-content">
-                <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
-            </div>
-            <span class="button gallery-button gallery-button-back">Назад</span>
-            <span class="button gallery-button gallery-button-next">Вперед</span>
-        </section>
-        <section class="conacts">
-            <h2>Контактная информация</h2>
-            <p>
-                Барбер шоп "Бородински":<br>
-                <strong>Адрес:</strong> Б.Конюшенная 19, д. 5<br>
-                <strong>Телефон:</strong> +7 985 896 44 55<br>
-            </p>
-            <p>
-                Время работы:<br>
-                <strong>Пн-пт:</strong> с 10<sup>00</sup> до 20<sup>00</sup><br>
-                <strong>Сб-вс:</strong> с 11<sup>00</sup> до 21<sup>00</sup><br>
-            </p>
-            <a class="button" href="map.html">Как проехать</a>
-            <a class="button" href="сcontacts.html">Обратная связь</a>
-        </section>
-        <section class="appointment">
-            <h2>Записаться</h2>
-            <p class="appointment-info">Укажите желаемое время и дату, и мы обязательно с вами свяжемся для подтверждения брони.</p>
-
+        <div class="price">
+            <h2>Стоимость услуг наших мастеров:</h2>
+            <table>
+                <tr>
+                    <td>Стрижка</td>
+                    <td>1500₽</td>
+                </tr>
+                <tr>
+                    <td>Стрижка бороды</td>
+                    <td>1500₽</td>
+                </tr>
+                <tr>
+                    <td>Стрижка усов</td>
+                    <td>1500₽</td>
+                </tr>
+            </table>
+        </div>
+        <section>
+            <h2>Несколько слов о нас:</h2>
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками.<br>
+            Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа.<br>
+            Мы не работаем на количество, мы делаем качество.</p>
+            
+        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно <br>
+        в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу,<br>
+         чувствовать себя комфортно и свободно!</p>
         </section>
     </main>
     <footer class="main-footer">
@@ -123,6 +114,6 @@
         <h2 class="visually-hidden">Как добраться</h2>
         <span class="modal-close">X</span>
     </section>
+</body>
 
-</body> 
 </html>
