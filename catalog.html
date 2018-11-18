@@ -13,9 +13,9 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <div><a claas="main-header-logo" href="index.html">
-                    <img src="logo.svg" width="368" height="153" alt="Логотип для барбершопа"> </a>
-            </div>
+            <a class="main-header-logo" href="index.html">
+                <img src="logo.svg" width="368" height="153" alt="Логотип для барбершопа"> </a>
+
             <ul class="site-navigation">
                 <li> <a href=info.html>Информация</a></li>
                 <li> <a href=news.html>Новости</a></li>
@@ -42,23 +42,25 @@
             <h2 class="visually-hidden">Список средств для ухода</h2>
 
         </section>
-        <li class="catalog-item">
-            <h3>
-                <a href="catalog-item.html">
-                    <span class="catalog-category">Увлажняющий кондиционер</span>
-                    <span class="catalog-item-title">«Baxter of California»</span>
-                </a>
-            </h3>
-            <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Увлажняющий кондиционер «Baxter of California»">
-                </a>
-            </p>
-            <p class="catalog-item-price">
-                <b>750 ₽</b>
-                <a class="button" href="#">Купить</a>
-            </p>
-        </li>
+    <ul>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Увлажняющий кондиционер</span>
+                        <span class="catalog-item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Увлажняющий кондиционер «Baxter of California»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>750 ₽</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+     
         <li class="catalog-item">
             <h3>
                 <a href="catalog-item.html">
@@ -127,6 +129,7 @@
                 <a class="button" href="#">Купить</a>
             </p>
         </li>
+        </ul>
         <ul class="pagination-list">
             <li class="pagination-item"><a href="#">1</a></li>
             <li class="pagination-item pagination-item-current"><a>2</a></li>
@@ -149,14 +152,14 @@
         </address>
         <div class="footer-social">
             <b>Давайте дружить</b>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <ul><li><a class="social-button" href="#">Вконтакте</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li></ul>
         </div>
         <p class="footer-copyright">
-            <b>Разработано</b>
-            <li><a class="button" href="#">Html Academy</a></li>
-        </p>
+            <b>Разработано</b></p>
+           <a class="button" href="#">Html Academy</a>
+        
     </footer>
     <section class="modal_modal-login">
         <h2>Личный кабинет</h2>

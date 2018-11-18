@@ -1,4 +1,10 @@
 body {
     width: 100%;
 
-
+header {
+  position: relative;
+  z-index: 5;
+  min-height: 20px;
+  padding: 20px;
+  color: white;
+    }
