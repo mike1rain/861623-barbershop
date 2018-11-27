@@ -1,0 +1,127 @@
+/*main-header-logo {
+    vertical-align: top;
+    align-items: center;
+}
+.main-header {
+    height: 72px;
+    background-color: black;
+    
+}
+.site-navigation {
+    vertical-align: top;
+    padding: 10px 29px 10px 29px;
+    float: top;
+    font-family: PTSans-Narrow;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: white; 
+}
+.main-body {
+  background-image: url("/img/bg2.jpg");
+}
+
+.features {
+    width: 940px;
+    align-content: center;
+}
+.visually-hidden {
+    position: absolute;
+    visibility: hidden;
+}
+.features-item {
+    align-items: center;
+    width: 251px;
+    padding: 10px 27px 10px 27px;
+    float: inherit;
+    text-align: center;
+}
+
+
+
+
+
+.h1 {
+    text-align: center;
+}
+
+body {
+    width: 1150px;
+    align-content: center;
+    background-image: url("/img/bg2.jpg");
+    margin: auto;
+    font-family: PTSans-Narrow;
+}
+
+
+.news {
+    max-width: 470px;
+    float: left;
+    padding: 10px 36px 5px 81px;
+}
+
+.gallery {
+    float: right;
+    padding: 1px 94px 50px 87px;
+
+}
+
+ul {
+    display: inline-block;
+    padding: 10px 5px 5px 10px;
+}
+
+li {
+    display: inline-block;
+
+}
+
+
+
+
+.button {
+    background-color: black;
+    padding: 17px 34px 17px 34px;
+    font-family: PTSans-Narrow;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+}
+
+.gallery-button {
+    padding: 17px 34px 17px 34px;
+}
+
+.gallery-button-back {
+    padding: 17px 34px 17px 34px;
+}
+
+
+.user-navigation {
+    padding: 10px 29px 10px 29px;
+    float: right;
+    font-family: PTSans-Narrow;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}
+.login-link {
+    
+    float: right;
+}
+
+

@@ -36,6 +36,57 @@
         </ul>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
+                            <label for="filter-baxter-of-california">Baxter of California</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                            <label for="filter-mr-natty">Mr Natty</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" >
+                            <label for="filter-suavecito">Suavecito</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                            <label for="filter-malin-goetz">Malin+Goetz</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+                            <label for="filter-murrays">Murray’s</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew" checked>
+                            <label for="filter-american-crew">American Crew</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Группы товаров:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
+                            <label for="filter-shave">Бритвенные принадлежности</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+                            <label for="filter-care">Средства для ухода</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+                            <label for="filter-accessories">Аксессуары</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">
+                    Показать
+                </button>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список средств для ухода</h2>
@@ -168,8 +219,8 @@
         </address>
         <div class="footer-social">
             <b>Давайте дружить</b>
-             <ul>
-               <li>
+            <ul>
+                <li>
                     <a class="social-button" href="img/vk.svg">Вконтакте</a>
                 </li>
                 <li src=>
@@ -185,19 +236,37 @@
         <a class="button" href="#">Html Academy</a>
 
     </footer>
-    <section class="modal_modal-login">
+    <form class="modal_modal-login" method="post" action="#">
         <h2>Личный кабинет</h2>
-        <span class="modal-close">X</span>
-    </section>
-    <section class="modal-map">
-        <h2 class="visually-hidden">Как добраться</h2>
-        <span class="modal-close">X</span>
-    </section>
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <p>
+            <label for="user-login">Логин</label>
+            <input id="user-login" type="text" name="login" placeholder="Логин">
+
+        </p>
+        <p>
+            <label for="user-password">Пароль</label>
+            <input id="user-password" type="text" name="password" placeholder="Пароль">
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="remember">Запомнить меня
+            </label>
+        </p>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button type="submit">Войти</button>
+        <button class="modal-close">X</button>
+    </form>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">
+            Как до нас добраться
+        </h2>
+        <p>
+            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">
+            Х
+        </button>
     </section>
 
 </body>
