@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородински"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="img/Favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="css/style.css">
     <link href="normalize.min.css" rel="stylesheet">
+
 </head>
 
 <body class="main-body">
@@ -15,16 +17,15 @@
             <a class="main-header-logo" href="index.html">
                 <img src="img/index-logo.svg" width="371" height="155" alt="Логотип для барбершопа"> </a>
             <ul class="site-navigation">
-                <li> <a href=info.html>Информация</a></li>
-                <li> <a href=news.html>Новости</a></li>
-                <li> <a href=price.html>Прайс-лист</a></li>
-                <li> <a href=catalog.html>Магазин</a></li>
-                <li> <a href=contacts.html>Контакты</a></li>
+                <li> <a href=info.html lable="Страница Информации">Информация</a></li>
+                <li> <a href=news.html lable="Страница Новостей">Новости</a></li>
+                <li> <a href=price.html lable="Страница Прайс-лист">Прайс-лист</a></li>
+                <li> <a href=catalog.html lable="Страница каталога">Магазин</a></li>
+                <li> <a href=contacts.html lable="Страница контактов">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li src="img/login.svg"></li>
                 <li class="login-link"><img src="img/login.svg">
-                    <a href=enter.html>Вход</a></li>
+                    <a href=enter.html lable="Окно входа">Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +48,8 @@
                 </li>
             </ul>
         </section>
-        <section class="news">
+       <div class="index-column">
+            <section class="news">
             <h2>Новости</h2>
             <ul class="news-list">
                 <li class="news-item">
@@ -74,6 +76,8 @@
             <button class="button gallery-button gallery-button-back">Назад</button>
             <button class="button gallery-button gallery-button-next">Вперед</button>
         </section>
+        </div>
+        <div class="index-contacts">
         <section class="conacts">
             <h2>Контактная информация</h2>
             <p>
@@ -89,29 +93,30 @@
             <a class="button" href="map.html">Как проехать</a>
             <a class="button" href="сcontacts.html">Обратная связь</a>
         </section>
-         <section class="appointment">
-        <h2>Записаться</h2>
-        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="appointment-item">
-            <label for="appointment-date">Дата</label>
-            <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
-          </p>
-          <p class="appointment-item">
-            <label for="appointment-time">Время</label>
-            <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-          </p>
-          <p class="appointment-item">
-            <label for="appointment-name">Ваше имя</label>
-            <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-          </p>
-          <p class="appointment-item">
-            <label for="appointment-phone">Телефон</label>
-            <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form> 
-      </section>
+        <section class="appointment">
+            <h2>Записаться</h2>
+            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item">
+                    <label for="appointment-date">Дата</label>
+                    <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-time">Время</label>
+                    <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-name">Ваше имя</label>
+                    <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-phone">Телефон</label>
+                    <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </section>
+        </div>
     </main>
     <footer class="main-footer">
         <address>
@@ -144,7 +149,9 @@
             <b>Разработано</b>
             <a class="button" href="#">Html Academy</a>
         </p>
-
+        <a class="visually-hidden" href="#top">
+            <h3>Перейти наверх</h3>
+        </a>
     </footer>
     <form class="modal_modal-login" method="post" action="#">
         <h2>Личный кабинет</h2>

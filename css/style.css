@@ -1,127 +1,134 @@
-/*main-header-logo {
-    vertical-align: top;
-    align-items: center;
-}
-.main-header {
-    height: 72px;
-    background-color: black;
-    
-}
-.site-navigation {
-    vertical-align: top;
-    padding: 10px 29px 10px 29px;
-    float: top;
-    font-family: PTSans-Narrow;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: white; 
-}
-.main-body {
-  background-image: url("/img/bg2.jpg");
-}
-
-.features {
-    width: 940px;
-    align-content: center;
-}
-.visually-hidden {
-    position: absolute;
-    visibility: hidden;
-}
-.features-item {
-    align-items: center;
-    width: 251px;
-    padding: 10px 27px 10px 27px;
-    float: inherit;
-    text-align: center;
-}
-
-
-
-
-
-.h1 {
-    text-align: center;
-}
-
 body {
-    width: 1150px;
-    align-content: center;
-    background-image: url("/img/bg2.jpg");
-    margin: auto;
-    font-family: PTSans-Narrow;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background: black;
+    background-image: url(/img/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
-
-.news {
-    max-width: 470px;
-    float: left;
-    padding: 10px 36px 5px 81px;
+.inner {
+    color: black;
+    background-color: beige;
+    background-image: url(/img/bg2.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
 }
 
-.gallery {
-    float: right;
-    padding: 1px 94px 50px 87px;
-
+a {
+    text-decoration: none;
 }
-
-ul {
-    display: inline-block;
-    padding: 10px 5px 5px 10px;
-}
-
-li {
-    display: inline-block;
-
-}
-
-
-
 
 .button {
-    background-color: black;
-    padding: 17px 34px 17px 34px;
-    font-family: PTSans-Narrow;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: left;
-    color: white;
-}
+    font: inherit;
 
-.gallery-button {
-    padding: 17px 34px 17px 34px;
-}
-
-.gallery-button-back {
-    padding: 17px 34px 17px 34px;
-}
-
-
-.user-navigation {
-    padding: 10px 29px 10px 29px;
-    float: right;
-    font-family: PTSans-Narrow;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
     text-align: center;
     color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: black;
+    border: none;
 }
-.login-link {
-    
-    float: right;
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: black;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: white;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: 242424;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.ffeatures-item {
+    text-align: center;
+}
+
+.features-item: h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-column {
+    color: black;
+    background-color: beige;
+    background-image: url(/img/bg2.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-column: h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list time {
+    text-transform: none;
+}
+
+.gallery-content {
+    background-color: aliceblue;
+    border: 7px solid #ffffff;
 }
 
 
+
+.index-contacts {
+    color: black;
+    background-color: beige;
+    background-image: url(/img/bg2.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.appointment-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.main-footer {
+    color: white;
+
+    background-color: #212121;
+    background-image: url(/img/) background-position: 0 0;
+    background-repeat: repeat;
+}
