@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Страница Товара</title>
+    <title>Инфо</title>
     <link rel="icon" href="img/Favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="css/style.css">
-    <link href="normalize.min.css" rel="stylesheet">
+    <!-- <link href="normalize.min.css" rel="stylesheet"> -->
+
 </head>
 
-<body class="inner">
+<body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
@@ -23,62 +24,26 @@
                 <li> <a href=contacts.html>Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="login-link">Вход</li>
+                <li src="img/login.svg"></li>
+                <li class="login-link"><a href=enter.html>Вход</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <h1>Средства для ухода</h1>
-
+        <h1>Информация</h1>
         <ul class="breadcrumb">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="catalog.html">Средства для ухода</a></li>
-            <li class="active">Набор для путешествий «Baxter of California»</li>
+            <li class="active">Инфо</li>
         </ul>
-        <section class="product-photos">
-            <h2 class="visually-hidden">Изображения товара</h2>
-            <p class="product-photo-full">
-                <img src="img/3-item.jpg" width="430" height="500" alt="Фото всего набора">
-            </p>
-            <ul class="product-photo-preview">
-                <li><img src="img/1-item.png" alt="Фото в анфас"></li>
-                <li><img src="img/2-item.png" alt="Фото в профиль"></li>
-                <li><img src="img/4-item.png" alt="Фото отдельной части"></li>
-            </ul>
-        </section>
-        <section class="product-info">
-            <h2>Описание товара</h2>
-            <p class="product-availability"><strong>Наличие:</strong> Есть в наличии</p>
-            <p class="product-article"><strong>Артикул:</strong> dexter-ae</p>
-            <p class="product-text"><strong>Описание товара:</strong> Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        </section>
-
-        <p class="product-price">
-            <b>2 900 ₽</b>
-            <a class="button" href="#">Купить</a>
-        </p>
-        <h3>В набор входят:</h3>
-        <ul>
-            <li>Средство для умывания (50 мл)</li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-        </ul>
+        <h1>Новости</h1>
+        
     </main>
-
-
-
-
-
-
     <footer class="main-footer">
         <address>
             <b>Контакты</b>
             Барбер шоп "Бородински":<br>
             Адрес: Б.Конюшенная 19, д. 5<br>
-            <a href="map.html">Как нас найти?</a>
+            <a href="https://goo.gl/maps/Upds9qsuC8S2">Как нас найти?</a>
             Телефон:+7 985 896 44 55<br>
 
             <p>
@@ -102,9 +67,8 @@
         </div>
         <p class="footer-copyright">
             <b>Разработано</b> </p>
-        <ul>
-            <li><a class="button" href="#">Html Academy</a></li>
-        </ul>
+        <a class="button" href="#">Html Academy</a>
+
     </footer>
     <form class="modal_modal-login" method="post" action="#">
         <h2>Личный кабинет</h2>

@@ -17,7 +17,7 @@ body {
 
 .inner {
     color: black;
-    background-color: beige;
+    background-color: white;
     background-image: url(/img/bg2.jpg);
     background-position: 0 0;
     background-repeat: repeat;
@@ -125,10 +125,10 @@ a {
     border: 2px solid black;
 }
 
-.main-footer {
+footer {
     color: white;
-
     background-color: #212121;
-    background-image: url(/img/) background-position: 0 0;
+    background-image: url(/img/bg3.jpg);
+    background-position: 0 0;
     background-repeat: repeat;
 }
