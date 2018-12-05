@@ -7,26 +7,30 @@
     <title>Контакты</title>
     <link rel="icon" href="img/Favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="normalize.min.css" rel="stylesheet"> -->
+    <link href="normalize.min.css" rel="stylesheet">
 
 </head>
 
-<body class="inner">
-    <header class="main-header">
+<body class="inner-page">
+    <header class="inner-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/logo-small.svg" width="150" height="50" alt="Логотип для барбершопа"> </a>
-            <ul class="site-navigation">
-                <li> <a href=info.html>Информация</a></li>
-                <li> <a href=news.html>Новости</a></li>
-                <li> <a href=price.html>Прайс-лист</a></li>
-                <li> <a href=catalog.html>Магазин</a></li>
-                <li> <a href=contacts.html>Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li src="img/login.svg"></li>
-                <li class="login-link"><a href=enter.html>Вход</a></li>
-            </ul>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <a class="main-header-logo" href="index.html">
+                        <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"> </a>
+                    <ul class="site-navigation">
+                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="price.html">Прайс-лист</a></li>
+                        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="login-link"><img src="img/login.svg">
+                            <a href=enter.html lable="Окно входа">Вход</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="container">
@@ -67,38 +71,41 @@
         </section>
     </main>
     <footer class="main-footer">
-        <address>
-            <b>Контакты</b>
-            Барбер шоп "Бородински":<br>
-            Адрес: Б.Конюшенная 19, д. 5<br>
-            <a href="https://goo.gl/maps/Upds9qsuC8S2">Как нас найти?</a>
-            Телефон:+7 985 896 44 55<br>
-
-            <p>
-                Время работы:<br>
-                Пн-пт: с 10<sup>00</sup> до 20<sup>00</sup><br>
-                Сб-вс: с 11<sup>00</sup> до 21<sup>00</sup><br>
-        </address>
-        <div class="footer-social">
-            <b>Давайте дружить</b>
-            <ul>
-                <li>
-                    <a class="social-button" href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
-                </li>
-                <li src=>
-                    <a class="social-button" href="#"><img src="img/facebook.svg" alt="Фейсбук"></a>
-                </li>
-                <li>
-                    <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="footer-contacts">
+                <address>
+                    <b>Контакты</b><br>
+                    Барбер шоп "Бородински":<br>
+                    Адрес: Б.Конюшенная 19, д. 5<br>
+                    <a href="https://goo.gl/maps/Upds9qsuC8S2">Как нас найти?</a>
+                    Телефон:+7 985 896 44 55<br>
+                </address>
+            </div>
+            <div class="footer-social">
+                <b>Давайте дружить</b>
+                <ul>
+                    <li>
+                        <a class="social-button" href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+                    </li>
+                    <li src=>
+                        <a class="social-button" href="#"><img src="img/facebook.svg" alt="Фейсбук"></a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано</b><br>
+                <a class="button" href="https://htmlacademy.ru/">Html Academy</a>
+            </p>
+            <button class="visually-hidden" href="#top">
+                <h3>Перейти наверх</h3>
+            </button>
         </div>
-        <p class="footer-copyright">
-            <b>Разработано</b> </p>
-        <a class="button" href="#">Html Academy</a>
-
     </footer>
-    <form class="modal_modal-login" method="post" action="#">
+
+    <form class="visually-hidden-modal_modal-login" method="post" action="#">
         <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <p>
@@ -117,9 +124,9 @@
         </p>
         <a class="restore" href="#">Я забыл пароль!</a>
         <button type="submit">Войти</button>
-        <button class="modal-close">X</button>
+        <button class="modal-close">Закрыть</button>
     </form>
-    <section class="modal modal-map">
+    <section class="visually-hidden-modal-modal-map">
         <h2 class="visually-hidden">
             Как до нас добраться
         </h2>
@@ -127,9 +134,10 @@
             <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <button class="modal-close" type="button">
-            Х
+            Закрыть
         </button>
     </section>
+
 </body>
 
 </html>

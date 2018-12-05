@@ -10,21 +10,26 @@
     <link href="normalize.min.css" rel="stylesheet">
 </head>
 
-<body class="inner">
-    <header class="main-header">
+<body class="inner-page">
+    <header class="inner-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/logo-small.svg" width="150" height="50" alt="Логотип для барбершопа"> </a>
-            <ul class="site-navigation">
-                <li> <a href=info.html>Информация</a></li>
-                <li> <a href=news.html>Новости</a></li>
-                <li> <a href=price.html>Прайс-лист</a></li>
-                <li> <a href=catalog.html>Магазин</a></li>
-                <li> <a href=contacts.html>Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li class="login-link">Вход</li>
-            </ul>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <a class="main-header-logo" href="index.html">
+                        <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"> </a>
+                    <ul class="site-navigation">
+                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="price.html">Прайс-лист</a></li>
+                        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="login-link"><img src="img/login.svg">
+                            <a href=enter.html lable="Окно входа">Вход</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="container">
@@ -49,7 +54,7 @@
                             <label for="filter-mr-natty">Mr Natty</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" >
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito">
                             <label for="filter-suavecito">Suavecito</label>
                         </li>
                         <li class="filter-option">
@@ -255,7 +260,7 @@
         </p>
         <a class="restore" href="#">Я забыл пароль!</a>
         <button type="submit">Войти</button>
-        <button class="modal-close">X</button>
+        <button class="modal-close">Закрыть</button>
     </form>
     <section class="modal modal-map">
         <h2 class="visually-hidden">
@@ -265,7 +270,7 @@
             <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <button class="modal-close" type="button">
-            Х
+            Закрыть
         </button>
     </section>
 
